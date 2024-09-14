@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            var jawab = prompt("Kamu beuntung! silahkan pilih hadiahmu dengan memasukkan angka 1 sampai 5");
+            var hadiah = "";
+            switch (jawab) {
+                case "1":
+                    hadiah="tisu";
+                    break;
+                case "2":
+                    hadiah="1 Kotak Kopi";
+                    break;
+                case "3":
+                    hadiah="Sticker";
+                    break;
+                case "4":
+                    hadiah="Minyak Goreng";
+                    break;
+                case "5":
+                    hadiah="Uang Rp.50.000";
+                    break;
+                default:
+                    document.write("<p>Ops! anda salah pilih</p>")
+                    break;
+            }
+            if (hadiah=="") {
+                document.write("<p>Kamu Gagal mendapat hadiah</p>")
+            }else{
+                document.write("<h2>Selamat1 kamu mendapat hadiah "+hadiah+" </h2>")
+            }
+        </script>
+    </body>
+</html>
