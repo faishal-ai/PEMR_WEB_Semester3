@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Document</title>
+    <script src="jquery-3.7.1.js"></script>
+    <script>
+        //percobaan1
+
+        // $(document).ready(function(){
+        //     $("#btn1").click(function(){
+        //         alert($("#test1").text())
+        //     });
+        //     $("#btn2").click(function(){
+        //         alert($("#test2").html())
+        //     });
+        //     $("#btn3").click(function(){
+        //         alert($("#test3").val())
+        //     });
+        // });
+
+        //percobaan2
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                alert($("#test1").text("<b>Hello World</b>"))
+            });
+            $("#btn2").click(function(){
+                alert($("#test2").html("<b>Hello World</b>"))
+            });
+            $("#btn3").click(function(){
+                alert($("#test3").val("Polinema"))
+            });
+        });
+    </script>
+</head>
+<body>
+    <p id="test1">This is the first paragfraf.</p>
+    <p id="test2">This is <b> another </b> paragraf.</p>
+
+    <p>your name: <input type="text" id="test3"></p>
+
+    <button id="btn1">Get Text</button>
+    <button id="btn2">Get Html</button>
+    <button id="btn3">Get Value</button>
+</body>
+</html>
